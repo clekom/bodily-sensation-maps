@@ -9,7 +9,7 @@ if ($contentType === "application/json") {
     $decoded = json_decode($content, true);
 
     $bodyData = $decoded['data'] ['bodyPartData'];
-    $uuid = $decoded['data'] ['uuid'];
+    $uuid = $decoded['data'] ['id'];
 
     $create_table = "CREATE TABLE IF NOT EXISTS bsm (id VARCHAR(255), bodypart VARCHAR(255), bodyvalue INT)";
     $table_statement = $pdo->exec($create_table);

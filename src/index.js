@@ -166,7 +166,7 @@ class BSM {
 
 	sendAllData(){
 		const data = {
-			id: this.data.id,
+			id: this.data.uuid,
 			bodyPartData: this.data.bodyPartData
 		};
 		console.log(data);
