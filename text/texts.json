@@ -1,0 +1,9 @@
+{
+  "instruction_title": "Ausfüllhinweise",
+  "instruction_text": "Hier kann die Ausfüllanleitung hinterlegt werden",
+  "send_notice_title": "Hinweis",
+  "send_notice_text":"Sind Sie sicher, dass Sie alle Aktivierungen eingetragen haben? Wenn ja, dann klicken Sie jetzt auf 'Weiter', wenn nicht, dann klicken Sie bitte auf 'Schließen'. Sie haben dann die Möglichkeit, weitere Aktivierungen einzutragen.",
+  "activiy-description": "Bitte geben Sie an, wie stark Sie an diesem Körperteil eine Aktivität gefühlt haben.",
+  "slider-top":"volle Aktivität",
+  "slider-bottom":"keine Aktivität"
+}

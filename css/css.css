@@ -1,0 +1,345 @@
+/*SICHERUNG!*/
+
+/* General */
+body {
+    background: #B0BEC5;
+    font-family: "Open Sans", Arial, sans-serif;
+}
+textarea {
+    font-family: "Open Sans", Arial, sans-serif;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 1.6em;
+}
+
+a {
+    font-size:0.85em;
+    text-align: center;
+    font-weight: bold;
+    color: #aa1b1b;
+}
+
+#header{
+    padding: 10px;
+    border-bottom:1px solid #aa1b1b;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+}
+
+#footer{
+    padding: 10px;
+    border-top:1px solid #aa1b1b;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+.left-flex{
+    display: flex;
+    padding: 10px;
+    margin-left: 10%;
+}
+
+/*Silhouette*/
+.silhouette{
+    width: 12%;
+    height: 100%;
+}
+
+.st0 {fill: #B0BEC5;
+    stroke: #000442;
+    stroke-width:0.5;
+    stroke-miterlimit:10;
+}
+.st1 {
+    fill: none;
+    stroke: #000522;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+}
+
+
+
+
+
+
+/* Buttons */
+.button {
+    background: #e7ebed;
+    color: #ac1813;
+    font-weight: bold;
+    font-size: 0.85em;
+    padding: 5px 30px;
+    border-radius: 1px;
+    text-align: center;
+    cursor: pointer;
+    margin: 20px 0;
+    border: none;
+    box-shadow: 0 4px 5px -3px #37474fe8;
+}
+
+.button:hover{
+    background-color: #d08081;
+}
+
+.info {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    cursor: help;
+    margin-top: 10px;
+}
+
+/* Toggle */
+.select-button{
+    margin: 20px 0;
+}
+
+.toggle{
+    display: none;
+}
+
+.toggle + label {
+    background: #e7ebed;
+    color: #ac1813;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 5px 15px;
+    border-radius: 1px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 4px 5px -3px #37474fe8;
+    margin-top: 10px;
+}
+
+.toggle:checked + label {
+    background: #d08081;
+    border: 1px solid #ac1813;
+    box-shadow: 0 4px 5px -3px #f91504;
+}
+
+
+/* Modals */
+.modal-background {
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-header__title {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.modal-header__description {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Modal Content/Box */
+.modal {
+    background-color: #fefefe;
+    padding: 15px;
+    border-radius: 1px;
+    margin: 0 auto;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 10px 20px 5px #37474fe8;
+}
+
+/* The Close Button */
+.modalButtonStyle {
+    background: #e7ebed;
+    color: #ac1813;
+    font-weight: bold;
+    font-size: 0.85em;
+    padding: 5px 30px;
+    border-radius: 1px;
+    text-align: center;
+    cursor: pointer;
+    margin: 20px 10px;
+    border: none;
+    box-shadow: 0 4px 5px -3px #37474fe8;
+    width: 150px;
+}
+
+.modalButtonStyle:hover {
+    background-color: #d08081;
+}
+
+.modalClose {
+    background: #363636;
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.85em;
+    padding: 5px 30px;
+    border-radius: 1px;
+    text-align: center;
+    cursor: pointer;
+    margin: 20px 0;
+    border: none;
+    box-shadow: 0 4px 5px -3px #37474fe8;
+    width: 150px;
+}
+
+.modalClose:hover {
+    background-color: #B0BEC5;
+}
+
+.input-container{
+    background-color: #fefefe;
+    border-radius: 1px;
+    margin: 0 auto;
+    width: 35%;
+    position: absolute;
+    top: 40%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 10px 20px 5px #37474fe8;
+    z-index: 1;
+    display: none;
+    padding: 15px;
+}
+
+
+/* Slider */
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 20px;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #B0BEC5, #aa1b1b);
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    vertical-align: baseline;
+    margin: 0;
+}
+
+.input-row{
+    display: inline-block;
+    width: 40px;
+    height: 150px;
+    padding: 0;
+}
+
+.input-row input{
+    width: 150px;
+    height: 20px;
+    margin: 0;
+    transform-origin: 75px 75px;
+    transform: rotate(-90deg)
+}
+
+.input-title-row {
+    font-size: 1.6em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    background: #fefefe;
+    cursor: ew-resize;
+    border: 2px solid #fefefe;
+}
+
+.slider::-moz-range-thumb {
+    -webkit-appearance: none;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    background: #fefefe;
+    cursor: ew-resize;
+    border: 2px solid #fefefe;
+}
+
+.noActivity {
+    width: 20px;
+    height: 20px;
+    background: #B0BEC5;
+    border-radius: 5px;
+    margin-right: 5px;
+
+}
+.fullActivity {
+    margin-left: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    background: #aa1b1b;
+}
+
+@media only screen and (max-width: 1200px) {
+    .silhouette{
+        width: 15%;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .silhouette{
+        width: 28%;
+    }
+    .input-container{
+        padding: 15px;
+        background-color: #fefefe;
+        border-radius: 1px;
+        margin: 0 auto;
+        width: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 10px 20px 5px #37474fe8;
+        z-index: 1;
+    }
+}
+@media only screen and (max-device-width : 720px) {
+    .silhouette{
+        width: 50%;
+    }
+    .input-container{
+        padding: 15px;
+        background-color: #fefefe;
+        border-radius: 1px;
+        margin: 0 auto;
+        width: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 10px 20px 5px #37474fe8;
+        z-index: 1;
+    }
+}
